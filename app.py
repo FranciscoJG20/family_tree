@@ -1,16 +1,18 @@
-from interface import interface
+from interface import Interface
 
-class Game:
-    def __init__(self):
+class Family_Tree:
+    
+    def create(self):
+        tree = Interface()
+        tree.main_menu()    
+
+play = Family_Tree()
+play.create()    
 
 
 
-  def from_input():
-        return Person(
-            input('Name: '),
-            input('Date of Birth: '),
-            input('Date of Death: '),
-        )
+
+#   
 
 # user = from_input()
 # print(user.name)

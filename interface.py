@@ -15,27 +15,32 @@ class Interface:
     def main_menu(self):
         self.set_name()
 
-        self.choose_to_play()
-        family_tree = input("{}, would you like to create a family tree?".format(name))
+        play_game = input("Hi {}, would you like to create a family tree? [yes/no]".format(self.name))
+        play_game = play_game.lower()
 
-        self.start_game(play_game, self.name)  
+        self.start_game(play_game)  
 
     def set_name(self):
         # GREET USER
-        print("Welcome to Family Tree")
+        print("Welcome to Family Tree!")
         name = input("Please, tell me your name: ")
 
         #SET USER NAME
-        print("Hi {}!".format(name))
-        self.name = name
-
-    def choose_to_play(self):
-        print("yes")
-        print("no")
+        self.name = name.lower()
 
     def start_game(self, play_game):
         if play_game == "yes":
             print("Great! Let's get started!")
+            ## method to have user input the first member of family 
         else:
             print("No worries! Create one next time!")
+
+    
+    # def create_family():
+    #     print("Let's enter your first family member")
+    #     return Person(
+    #         input('Name: '),
+    #         input('Date of Birth: '),
+    #         input('Date of Death: '),
+    #     )
 
