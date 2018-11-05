@@ -36,11 +36,11 @@ class Interface:
             print("No worries! Create one next time!")
 
     
-    # def create_family():
-    #     print("Let's enter your first family member")
-    #     return Person(
-    #         input('Name: '),
-    #         input('Date of Birth: '),
-    #         input('Date of Death: '),
-    #     )
+    def create_family():
+        print("Let's enter your first family member")
+        return Person(
+            input('Name: '),
+            input('Date of Birth: '),
+            input('Date of Death: '),
+        )
 
